@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://fazerwm.app/docs
+    about: Setup, permissions, keybindings, and troubleshooting docs.
+  - name: Troubleshooting
+    url: https://fazerwm.app/docs/troubleshooting
+    about: Common problems — permissions, gesture conflicts, multi-monitor quirks.
