@@ -11,7 +11,8 @@
             <sparkle:shortVersionString>2026.09.27-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://raw.githubusercontent.com/Konstruukt-Labs/fazerwm/main/FazerWM-2026.09.27-beta.dmg" length="5706433" type="application/octet-stream" sparkle:edSignature="CmYhTNul3qoqP69BDJQt6kEi/aZROqrrdUWmFIiJiXjxMk03aaUSaelIQwVXPOz5iD2t9BGlnm/7mgcm5jDUAA=="/>
+            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.09.27-beta/FazerWM-2026.09.27-beta.dmg" length="5706433" type="application/octet-stream" sparkle:edSignature="CmYhTNul3qoqP69BDJQt6kEi/aZROqrrdUWmFIiJiXjxMk03aaUSaelIQwVXPOz5iD2t9BGlnm/7mgcm5jDUAA=="/>
+        <sparkle:releaseNotesLink>https://github.com/Konstruukt-Labs/fazerwm/releases/tag/v2026.09.27-beta</sparkle:releaseNotesLink>
         </item>
         <item>
             <title>2026.09.26-beta</title>
@@ -22,7 +23,8 @@
             <sparkle:shortVersionString>2026.09.26-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://raw.githubusercontent.com/Konstruukt-Labs/fazerwm/main/FazerWM-2026.09.26-beta.dmg" length="5670798" type="application/octet-stream" sparkle:edSignature="1NPy9gQfRS/a3kImJu1b+ZtqCJ+99Agt3F2MyCgjw5GuS9v0TmBJNZG+9VdZ2AEEtEG/qw4NNbNQGxV19hOYBA=="/>
+            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.09.26-beta/FazerWM-2026.09.26-beta.dmg" length="5670798" type="application/octet-stream" sparkle:edSignature="1NPy9gQfRS/a3kImJu1b+ZtqCJ+99Agt3F2MyCgjw5GuS9v0TmBJNZG+9VdZ2AEEtEG/qw4NNbNQGxV19hOYBA=="/>
+        <sparkle:releaseNotesLink>https://github.com/Konstruukt-Labs/fazerwm/releases/tag/v2026.09.26-beta</sparkle:releaseNotesLink>
         </item>
     </channel>
 </rss>
