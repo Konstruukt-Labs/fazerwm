@@ -3,6 +3,31 @@
     <channel>
         <title>FazerWM</title>
         <item>
+            <title>2026.09.28-beta</title>
+            <pubDate>Mon, 28 Sep 2026 04:20:40 +0000</pubDate>
+            <link>https://fazerwm.app</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>2026.09.28.16</sparkle:version>
+            <sparkle:shortVersionString>2026.09.28-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## What's new
+
+- Torn-off window tabs now land in their own column instead of stacking back into the window they came from.
+- Drop zones now cover the whole window rather than just the title area, so tabs dragged out of side panels can be placed too. Firefox can't display zones during a drag, but its torn tabs still land correctly.
+- Workspace up/down shortcuts now default to Hyper+' and Hyper+/ instead of PageUp/PageDown, which many laptop keyboards lack.
+- Update dialogs now show the notes for each release instead of embedding webpage.
+
+## Fixes
+
+- The focus ring now redraws at the right size when layout resizes the focused window, for example when it expands after its column-mate closes. Previously it could stay at the old size until the next window event.
+- Fixed the appcast download URLs so updates fetch the correct file.
+- Also includes internal improvements to the release pipeline.
+
+]]></description>
+            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.09.28-beta/FazerWM-2026.09.28-beta.dmg" length="5714567" type="application/octet-stream" sparkle:edSignature="96eoBYt2LsrnAz9D2M4ckhwGraK8VqncAW/EVRvjYUt/1sHcKtWvXyVAeu4La16poVqDAkzObRURdBQ3ZAR4AQ=="/>
+        </item>
+        <item>
             <title>2026.09.27-beta</title>
             <pubDate>Sun, 27 Sep 2026 19:21:12 +1000</pubDate>
             <link>https://fazerwm.app</link>
