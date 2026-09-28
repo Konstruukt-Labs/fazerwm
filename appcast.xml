@@ -12,7 +12,15 @@
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.09.27-beta/FazerWM-2026.09.27-beta.dmg" length="5706433" type="application/octet-stream" sparkle:edSignature="CmYhTNul3qoqP69BDJQt6kEi/aZROqrrdUWmFIiJiXjxMk03aaUSaelIQwVXPOz5iD2t9BGlnm/7mgcm5jDUAA=="/>
-        <sparkle:releaseNotesLink>https://github.com/Konstruukt-Labs/fazerwm/releases/tag/v2026.09.27-beta</sparkle:releaseNotesLink>
+            <description sparkle:format="markdown"><![CDATA[## What's new
+
+- Step through workspaces one at a time with hyper+Page Up/Page Down, or by swiping up or down with three fingers while holding hyper. Steps move through every workspace on a display, stop at the ends, and never create a new one; with coupled workspaces, all displays step together.
+
+- Tearing a tab off in Chrome now works with drop zones. The torn window is held aside for the whole drag, so the layout doesn't reshuffle or steal focus while you're still moving, and it lands in the zone you release over.
+
+Also includes internal improvements.
+
+]]></description>
         </item>
         <item>
             <title>2026.09.26-beta</title>
@@ -24,7 +32,18 @@
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.09.26-beta/FazerWM-2026.09.26-beta.dmg" length="5670798" type="application/octet-stream" sparkle:edSignature="1NPy9gQfRS/a3kImJu1b+ZtqCJ+99Agt3F2MyCgjw5GuS9v0TmBJNZG+9VdZ2AEEtEG/qw4NNbNQGxV19hOYBA=="/>
-        <sparkle:releaseNotesLink>https://github.com/Konstruukt-Labs/fazerwm/releases/tag/v2026.09.26-beta</sparkle:releaseNotesLink>
+            <description sparkle:format="markdown"><![CDATA[## Notes
+
+This is the first public beta release of FazerWM, a keyboard-driven tiling window manager for macOS. It is free to try.
+
+- Windows tile into columns across workspaces, and every display keeps its own stack of numbered or named workspaces. A first-launch assistant walks you through permissions and hyper-key setup.
+- Move things three ways: keyboard chords (Shift moves a window, Option moves a column), trackpad gestures, or dragging with live drop-zone previews for merges, tabs, and cross-display moves.
+- The overview lays out every workspace as live thumbnails: click a window to jump to it, or drag one to another workspace or display.
+- `Option+Tab` and `` Option+` `` flip through your most recent windows, window by window instead of app by app.
+- A column can hold its windows as tabs or a stack, native macOS tab groups (like Terminal's ⌘T) included, and any window can park at a screen edge with a narrow peek.
+- Everything is configurable in the settings window or a YAML config file, with per-app window rules, vi and emacs directional presets, and built-in SketchyBar integration.
+
+]]></description>
         </item>
     </channel>
 </rss>
