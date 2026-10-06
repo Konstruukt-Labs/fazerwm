@@ -3,6 +3,36 @@
     <channel>
         <title>FazerWM</title>
         <item>
+            <title>2026.10.06-beta</title>
+            <pubDate>Tue, 06 Oct 2026 08:06:53 +0000</pubDate>
+            <link>https://fazerwm.app</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>2026.10.06.18</sparkle:version>
+            <sparkle:shortVersionString>2026.10.06-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[```markdown
+## What's new
+
+- The free tier now only has a single workspace per display. When a trial ends, windows from the other workspaces are folded into Workspace 1, and the trial-expired dialog explains what changed on screen.
+- Layouts now adapt when the menu bar's auto-hide setting changes or when SketchyBar starts, quits, or changes its inset, so tiling no longer keeps reserving space that is not there.
+- Window rules and named workspaces can be duplicated in Settings. Saving is prevented while a duplicate is still identical to its original, and a banner explains what needs to be resolved first.
+- In the keybinds panel, workspace groups now carry the Pro lock badge on the free tier, with a caption explaining that the badge marks Pro features and that your bindings are kept.
+- Workspace keybindings (focus workspace, move column to workspace, move window to workspace) are indicated as Pro features. Bindings you have already configured are preserved and reactivate when you upgrade.
+- Settings sidebar sections are sorted alphabetically within their groups.
+
+## Fixes
+
+- Fixed a crash when clicking the Override button on a window rule's width field.
+- Text in Settings no longer renders upside down when the window is opened from the trial-expired dialog's "Enter License Key" button.
+- Tab indicators no longer stay in their old spot after a display is reconnected or reconfigured; they follow the window again.
+- Also includes internal improvements to build and release tooling.
+```
+
+]]></description>
+            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.10.06-beta/FazerWM-2026.10.06-beta.dmg" length="5784532" type="application/octet-stream" sparkle:edSignature="Jkaq5SCadfydQ+QPqRpaAn3g+6IeXEZvNfSKOj5etCUadLBj+ZHxEu4D+Z0wu0qKOrlI4HJzOHTHDPghxzZYBw=="/>
+        </item>
+        <item>
             <title>2026.09.30-beta</title>
             <pubDate>Wed, 30 Sep 2026 02:35:45 +0000</pubDate>
             <link>https://fazerwm.app</link>
@@ -45,26 +75,6 @@
 
 ]]></description>
             <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.09.28-beta/FazerWM-2026.09.28-beta.dmg" length="5714567" type="application/octet-stream" sparkle:edSignature="96eoBYt2LsrnAz9D2M4ckhwGraK8VqncAW/EVRvjYUt/1sHcKtWvXyVAeu4La16poVqDAkzObRURdBQ3ZAR4AQ=="/>
-        </item>
-        <item>
-            <title>2026.09.27-beta</title>
-            <pubDate>Sun, 27 Sep 2026 19:21:12 +1000</pubDate>
-            <link>https://fazerwm.app</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>2026.09.27.15</sparkle:version>
-            <sparkle:shortVersionString>2026.09.27-beta</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.09.27-beta/FazerWM-2026.09.27-beta.dmg" length="5706433" type="application/octet-stream" sparkle:edSignature="CmYhTNul3qoqP69BDJQt6kEi/aZROqrrdUWmFIiJiXjxMk03aaUSaelIQwVXPOz5iD2t9BGlnm/7mgcm5jDUAA=="/>
-            <description sparkle:format="markdown"><![CDATA[## What's new
-
-- Step through workspaces one at a time with hyper+Page Up/Page Down, or by swiping up or down with three fingers while holding hyper. Steps move through every workspace on a display, stop at the ends, and never create a new one; with coupled workspaces, all displays step together.
-
-- Tearing a tab off in Chrome now works with drop zones. The torn window is held aside for the whole drag, so the layout doesn't reshuffle or steal focus while you're still moving, and it lands in the zone you release over.
-
-Also includes internal improvements.
-
-]]></description>
         </item>
     </channel>
 </rss>
