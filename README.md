@@ -28,7 +28,7 @@ Pre-release builds are published as
 [prereleases](https://github.com/Konstruukt-Labs/fazerwm/releases) and offered
 over the same update feed, tagged for the `beta` channel. To receive them, in
 FazerWM open **Settings → General → Beta updates**. Turn it off and you're
-back on stable-only updates. Betas get features earlier and stability later —
+back on stable-only updates. Betas get features earlier and stability later —„
 report anything broken via the issue tracker.
 
 ## Versioning
@@ -37,6 +37,15 @@ CalVer: `YYYY.MM.DD` — the UTC date of the release. Betas append
 `-beta.<build>` (e.g. `2026.09.01-beta.42`). A same-day hotfix appends
 `.N` (`2026.09.01.1`); the build number keeps the plain date so Sparkle's
 update ordering stays monotonic.
+
+## Changelog
+
+[`CHANGELOG.md`](./CHANGELOG.md) holds the notes of **every** release,
+newest first. Each release's notes are archived there by CI at publish
+time, so they survive even when a release is later removed from the
+[releases page](https://github.com/Konstruukt-Labs/fazerwm/releases) —
+the releases page shows what's currently downloadable, the changelog keeps
+the history. Don't hand-edit entries; the next release prepends on top.
 
 ## The appcast file
 
