@@ -1,3 +1,25 @@
+## FazerWM 2026.10.21-beta — 2026-10-21
+
+## What's new
+
+- Settings got a full visual overhaul: every pane now shares one row and section layout, controls line up across tabs, text fields for rule names and regexes get more room, and locked or inactive settings share one dimmed look.
+- New Support section in Settings, with a "Copy support summary" action that puts the version, build and device ID on the clipboard, plus links to Discord, email and the docs.
+- The first-launch assistant is easier to follow: steps show plain-language statuses, and the Screen Recording permission now leads with what it is for, window previews in Overview, the switcher and tab hovers, and notes that captures stay in memory and are never saved or sent.
+- Deactivating a license key now asks for confirmation first.
+
+## Fixes
+
+- License activation failures are no longer silent: an invalid, refunded or device-limited key now shows an error message instead of appearing to do nothing.
+- Several settings displayed defaults the app never used, including the tab gap, the overview thumbnail toggle and the focus ring corner radius; the shown values now match the real ones.
+- Firefox windows relocated to avoid the mouse across displays no longer land mid-screen.
+- Moves issued over IPC now place windows correctly.
+- In the Binds tab, clicking a workspace group's title now expands it; previously only the small caret worked.
+- Pressing Record on a keybind no longer shifts the shortcut field sideways.
+
+Also includes internal improvements.
+
+---
+
 # Changelog
 
 Every FazerWM release, newest first. Entries are archived here at publish
