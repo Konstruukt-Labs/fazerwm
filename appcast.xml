@@ -10,7 +10,20 @@
             <sparkle:shortVersionString>2026.10.26</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[FazerWM 2026.10.26 (stable channel). See https://fazerwm.app for details.
+            <description sparkle:format="markdown"><![CDATA[FazerWM is a keyboard-driven tiling window manager for macOS.
+
+- Windows tile into columns you drive from the keyboard: focus, move, resize, and reorder without touching the mouse. Vi- and Emacs-style keybind presets ship in the box.
+- Each display has its own workspaces, so different projects stay on different screens. Switch with a keystroke. Can be coupled in settings.
+- One keypress opens the overview: every workspace on every display at once, as thumbnails you can click to jump to.
+- Dragging works too. Labeled drop zones offer a new column or a stack, with more options under Pro.
+- Native macOS tab groups are managed as one window: they tile, move, and park together, and a column can hold tabs of its own.
+- Rules can send an app to a given workspace or column the moment it opens, matched by app, window title, or pattern.
+- Trackpad gestures and a recent-windows switcher sit alongside the keybinds.
+- Multi-display layouts survive a monitor going to sleep or reconnecting one screen at a time; columns and their order stay put.
+- A first-run wizard explains the two macOS permissions and what each one is for before asking for them.
+- FazerWM is free to use, tiling up to eight windows in a single workspace, and every install starts with a Pro trial.
+- Pro adds more workspaces and the fuller set of drag actions: drop as a tab, drag whole columns, pause at a display edge to switch workspaces mid-drag, or continue a drag inside the overview.
+
 ]]></description>
             <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.10.26/FazerWM-2026.10.26.dmg" length="5896807" type="application/octet-stream" sparkle:edSignature="b78fAPEM23UjKb0dcMnUvSqTeIAhCsiEQi5Z6YyJL2YovFY/gppdCuDzRp82c1Eygvxy/b7+XO9e/3XnRakpCA=="/>
         </item>
