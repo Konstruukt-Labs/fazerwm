@@ -2,6 +2,22 @@
 
 ## What's new
 
+- Pausing a window drag at a screen edge now moves between workspaces: left and right edges scroll the workspace a column at a time, top and bottom switch to the workspace above or below, and the bottom edge offers a new workspace when the last one is occupied. Parked-window thumbnails drag the same way, and with coupled workspaces every display switches together. A quick pass through an edge does nothing, so dragging between displays is unchanged. (Pro)
+- Pressing the overview key mid-drag continues the drag inside the overview, so a window can be dropped on any workspace, on any display. (Pro)
+- Dragging a thumbnail past the edge of an overview row now scrolls that row while the pointer rests on the band. The row keeps its scrolled position after the drop and springs back otherwise.
+- Drop zones have a new pill style with an icon and a label naming the action ("New column", "Stack above", "Add as tab"), and the edge bands have bolder indicators that stand out against window borders.
+- The Pro pane in Settings now lists the drag features included with Pro.
+
+## Fixes
+
+- Releasing a drag away from every drop zone after an edge switch now moves the window onto the workspace in view, instead of leaving it behind on the workspace it came from.
+
+---
+
+## FazerWM 2026.10.26-beta — 2026-10-26
+
+## What's new
+
 - Drag a parked window by its thumbnail's title band to pick up the real window and drop it straight onto a drop zone.
 - The trial-expired dialog is now an animated rundown of what the free tier removes, and its Continue button waits out a 10-second countdown before it can be clicked.
 - Text editing shortcuts (⌘C, ⌘V, ⌘X, ⌘Z, ⌘A) now work in Settings and setup-assistant text fields; previously only the right-click context menu did.
