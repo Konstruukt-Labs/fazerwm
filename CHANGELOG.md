@@ -1,3 +1,25 @@
+## FazerWM 2026.10.26-beta — 2026-10-26
+
+## What's new
+
+- Drag a parked window by its thumbnail's title band to pick up the real window and drop it straight onto a drop zone.
+- The trial-expired dialog is now an animated rundown of what the free tier removes, and its Continue button waits out a 10-second countdown before it can be clicked.
+- Text editing shortcuts (⌘C, ⌘V, ⌘X, ⌘Z, ⌘A) now work in Settings and setup-assistant text fields; previously only the right-click context menu did.
+- The Screen Recording button in the setup assistant reads "Request Access" instead of "Request…", which looked like truncated text.
+
+## Fixes
+
+- Drop zones during a window drag now appear without delay, including drags that cross from one display to another, which could previously leave the zone missing entirely.
+- A long drag no longer teleports the window off the pointer partway through.
+- Clicking or dragging a partially offscreen window no longer jumps the workspace view mid-gesture.
+- After dropping a window to the right of a column, the view no longer scrolls to it and then snaps back.
+- A window whose position took a moment to settle no longer gets repositioned over and over, which could steal focus for several seconds.
+- Fixed a rare case where the setup assistant's keybindings step could overwrite an existing config file, losing settings such as window rules.
+
+Also includes internal improvements.
+
+---
+
 ## FazerWM 2026.10.21-beta — 2026-10-21
 
 ## What's new
