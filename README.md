@@ -14,7 +14,7 @@ Grab the latest `FazerWM-<version>.dmg` from the
 drag **FazerWM.app** to `/Applications`, and launch it — the setup assistant
 walks you through the required permissions.
 
-- macOS 14 (Sonoma) or later, Apple Silicon (M1 or later)
+- macOS Apple Silicon (M1 or later)
 - Signed with a Developer ID and notarized
 - In-app updates (Sparkle) are enabled by default; the app checks once a day
 
