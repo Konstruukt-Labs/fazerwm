@@ -4,6 +4,30 @@
         <title>FazerWM</title>
         <item>
             <title>2026.10.26-beta</title>
+            <pubDate>Mon, 26 Oct 2026 07:11:04 +0000</pubDate>
+            <link>https://fazerwm.app</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>2026.10.26.22</sparkle:version>
+            <sparkle:shortVersionString>2026.10.26-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## What's new
+
+- Pausing a window drag at a screen edge now moves between workspaces: left and right edges scroll the workspace a column at a time, top and bottom switch to the workspace above or below, and the bottom edge offers a new workspace when the last one is occupied. Parked-window thumbnails drag the same way, and with coupled workspaces every display switches together. A quick pass through an edge does nothing, so dragging between displays is unchanged. (Pro)
+- Pressing the overview key mid-drag continues the drag inside the overview, so a window can be dropped on any workspace, on any display. (Pro)
+- Dragging a thumbnail past the edge of an overview row now scrolls that row while the pointer rests on the band. The row keeps its scrolled position after the drop and springs back otherwise.
+- Drop zones have a new pill style with an icon and a label naming the action ("New column", "Stack above", "Add as tab"), and the edge bands have bolder indicators that stand out against window borders.
+- The Pro pane in Settings now lists the drag features included with Pro.
+
+## Fixes
+
+- Releasing a drag away from every drop zone after an edge switch now moves the window onto the workspace in view, instead of leaving it behind on the workspace it came from.
+
+]]></description>
+            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.10.26-beta/FazerWM-2026.10.26-beta.dmg" length="5896505" type="application/octet-stream" sparkle:edSignature="FtyyZBqgafAhN+pyRohS0pSD0LBbKSpqLL52MXsjCNwSv5zhptMaDxKjziRbYIxIm6c2vcGbbOX10cMN+VxXCw=="/>
+        </item>
+        <item>
+            <title>2026.10.26-beta</title>
             <pubDate>Mon, 26 Oct 2026 03:20:48 +0000</pubDate>
             <link>https://fazerwm.app</link>
             <sparkle:channel>beta</sparkle:channel>
@@ -61,36 +85,6 @@ Also includes internal improvements.
 
 ]]></description>
             <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.10.21-beta/FazerWM-2026.10.21-beta.dmg" length="5804855" type="application/octet-stream" sparkle:edSignature="9e+ftITgs0eiCwoV9u5Sv5A0vdxhuinuI2iiEVfb6fCfMaReejrpqsd1PbkZBqZye+j2r8t00Fq4PqkzSfjEDQ=="/>
-        </item>
-        <item>
-            <title>2026.10.19-beta</title>
-            <pubDate>Mon, 19 Oct 2026 23:35:06 +0000</pubDate>
-            <link>https://fazerwm.app</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>2026.10.19.19</sparkle:version>
-            <sparkle:shortVersionString>2026.10.19-beta</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[
-## What's new
-
-- Keybind and gesture settings now flag duplicate bindings. A banner and captions on the affected rows name the conflicts, and a conflict you introduce while editing blocks saving until it's resolved. Conflicts already present in the config file stay advisory.
-- The Pro pane now links to the website for current plans and pricing instead of embedding prices in the app, and purchase links are enabled again.
-- The free tier now tiles up to 8 windows. The cap applies only to newly tiled windows, so a trial ending mid-layout never evicts what's already laid out; windows beyond it float in place, the status bar shows how many slots are in use, and upgrading re-tiles everything the cap floated.
-- Deactivate now works from lapsed installs too, so a Mac whose coverage window has passed can still free its license slot for another machine. A failed deactivate now shows an error instead of failing silently.
-
-## Fixes
-
-- Powering a monitor off and back on no longer collapses the layout. Reconnects used to arrive staggered, and the first one-screen event would cram everything onto the surviving display, scrambling column order and stranding windows; the layout now waits for the full display set to return and comes back unchanged.
-- Windows placed in a named workspace by a rule stay there while displays reconnect, instead of being dropped onto a numbered workspace.
-- Switching windows no longer snaps focus back to a parked native tab group a second later.
-- Fixed a positioning bug that could park a window with only its title bar visible.
-- Parked native tab groups no longer show blank thumbnails, and clicking one brings the right tab forward.
-- Native tab groups move as a single unit between workspaces, and closing a tab now returns focus to the group instead of an arbitrary window.
-- When a trial expires, windows parked in named workspaces now move to Workspace 1 instead of becoming unreachable, and windows floated past the cap while parked off-screen are brought back on screen.
-- Also includes internal improvements.
-]]></description>
-            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.10.19-beta/FazerWM-2026.10.19-beta.dmg" length="5868874" type="application/octet-stream" sparkle:edSignature="7+q+yU+y6/4x3UctL9FjQxCRWbumoWgvUbkqItk+zAxdex7JgYTxmKsh1xogcVotIk5oxlbV3v0KGFIXDiNKDA=="/>
         </item>
     </channel>
 </rss>
