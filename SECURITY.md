@@ -3,8 +3,10 @@
 ## Reporting a vulnerability
 
 Please report vulnerabilities through GitHub's **private vulnerability
-reporting** on this repo (Security tab → "Report a vulnerability"), or email
-the address on [fazerwm.app](https://fazerwm.app) if it's listed there.
+reporting** on this repo (Security tab → "Report a vulnerability"), or a
+direct message to **ItsVRK** (Brian) on the
+[Discord](https://discord.gg/yyCp5D2Ccp)
+(see [fazerwm.app/support](https://fazerwm.app/support) for contact details).
 
 Do **not** open a public issue for anything security-sensitive, including:
 
