@@ -58,13 +58,6 @@ Also includes internal improvements.
 
 ---
 
-# Changelog
-
-Every FazerWM release, newest first. Entries are archived here at publish
-time, so their notes survive even if a release is later removed from the
-[releases page](https://github.com/Konstruukt-Labs/fazerwm/releases). The
-same text appears in the app's update dialog.
-
 ## FazerWM 2026.10.19-beta — 2026-10-19
 
 ## What's new
