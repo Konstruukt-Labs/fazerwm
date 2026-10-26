@@ -1,3 +1,9 @@
+## FazerWM 2026.10.26 — 2026-10-26
+
+FazerWM 2026.10.26 (stable channel). See https://fazerwm.app for details.
+
+---
+
 ## FazerWM 2026.10.26-beta — 2026-10-26
 
 ## What's new
