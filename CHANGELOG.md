@@ -1,3 +1,20 @@
+## FazerWM 2026.10.29-beta — 2026-10-29
+
+## What's new
+
+- Overview thumbnails now carry a label showing the app icon and window title, so windows are easier to tell apart at a glance. Configure them under Settings > Overview > Window Labels.
+- Recent windows cards show the app icon next to the app name. Toggle it under Settings > Recent Windows.
+
+## Fixes
+
+- Fixed a wake bug where a display's windows could end up on another display and stay there after the display returned, leaving conflicting layouts and an empty desktop.
+- Windows keep their display and workspace assignments through brief display reconfigurations, such as waking from sleep or switching inputs.
+- Dragging a file or selected text out of a window no longer brings up the drop-zone overlay when the pointer crosses onto another display.
+- Apps that insist on their own window size, like a browser restoring its previous session, are now sized correctly instead of keeping the wrong height.
+- Reopening the overview no longer shows a stale app label or a stuck expanded label.
+
+---
+
 ## FazerWM 2026.10.26 — 2026-10-26
 
 FazerWM 2026.10.26 (stable channel). See https://fazerwm.app for details.
