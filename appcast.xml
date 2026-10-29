@@ -3,31 +3,6 @@
     <channel>
         <title>FazerWM</title>
         <item>
-            <title>2026.10.29-beta</title>
-            <pubDate>Thu, 29 Oct 2026 05:24:21 +0000</pubDate>
-            <link>https://fazerwm.app</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>2026.10.29.25</sparkle:version>
-            <sparkle:shortVersionString>2026.10.29-beta</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## What's new
-
-- Overview thumbnails now carry a label showing the app icon and window title, so windows are easier to tell apart at a glance. Configure them under Settings > Overview > Window Labels.
-- Recent windows cards show the app icon next to the app name. Toggle it under Settings > Recent Windows.
-
-## Fixes
-
-- Fixed a wake bug where a display's windows could end up on another display and stay there after the display returned, leaving conflicting layouts and an empty desktop.
-- Windows keep their display and workspace assignments through brief display reconfigurations, such as waking from sleep or switching inputs.
-- Dragging a file or selected text out of a window no longer brings up the drop-zone overlay when the pointer crosses onto another display.
-- Apps that insist on their own window size, like a browser restoring its previous session, are now sized correctly instead of keeping the wrong height.
-- Reopening the overview no longer shows a stale app label or a stuck expanded label.
-
-]]></description>
-            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.10.29-beta/FazerWM-2026.10.29-beta.dmg" length="5928137" type="application/octet-stream" sparkle:edSignature="5lF2y+u3Q4xd3lSwEMo53ptrA2kkmWqF3bhbxwQjdU8nbXQXcxz+wuITXDc+/jQ+kw0NaL7GHQDkUIpw/5aRDA=="/>
-        </item>
-        <item>
             <title>2026.10.26</title>
             <pubDate>Mon, 26 Oct 2026 22:56:32 +0000</pubDate>
             <link>https://fazerwm.app</link>
