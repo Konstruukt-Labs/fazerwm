@@ -3,6 +3,42 @@
     <channel>
         <title>FazerWM</title>
         <item>
+            <title>2026.11.06</title>
+            <pubDate>Fri, 06 Nov 2026 05:31:37 +0000</pubDate>
+            <link>https://fazerwm.app</link>
+            <sparkle:version>2026.11.06.27</sparkle:version>
+            <sparkle:shortVersionString>2026.11.06</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## What's new
+
+- Session restore (Pro). FazerWM saves your layout as you work and puts it back after a FazerWM restart, a reboot or a logout: each window returns to its display, workspace and column, stacked and tabbed columns regroup, manual widths and floating positions come back, and the window you were using gets focus again. After a reboot it waits up to a minute for your apps to reopen their windows and shows a "Restoring your layout" panel while it places them. Plugging in a display setup you have used before moves windows back to the displays they were on, and a setup it has not seen is laid out from the most recent one.
+- macOS native fullscreen now works alongside the tiling layout. A fullscreen window keeps its column, with a placeholder holding the gap on the desktop and in the Overview, and fullscreen windows show an icon in Recent Windows. Leaving fullscreen puts the window back in its column and takes you to its workspace. Starting FazerWM while an app is fullscreen now finds the windows on the desktop behind it. Window rules take precedence over fullscreen: the green button on a rule-managed window shows a short note instead.
+- Minimizing windows works. A minimized window leaves its column and the others close up. Restoring it from the Dock, Recent Windows or the Overview brings it back as a new column after the focused window, on that window's display, and focuses it. Minimizing the focused window passes focus on the way closing one does. The Overview shows minimized windows along the bottom edge of each display: hover one to see it in full, click to restore.
+- Overview column drags (Pro). Hold the column-drag modifier while dragging a thumbnail to move a whole column, with stacked windows and tab indicators carried along. The drag keeps going when you close the Overview mid-drag or carry it onto the desktop. Dropping a column on another column's middle merges it as a stack or as tabs. Dragging from desktop to Overview works as well.
+- The Recent Windows switcher can take over ⌘Tab, ⌘⇧Tab, ⌘` and ⌘⇧` (Pro, off by default).
+- Overview window labels and app icons in the Recent Windows switcher are new Pro features.
+- The trial-ended dialog and the Pro tab link to the full Free vs Pro table.
+- FazerWM launches faster. Windows are tiled about 45 percent sooner, the menu bar icon and login-item setup no longer delay the first layout, and keybinds and gestures stay responsive while it starts.
+
+## Fixes
+
+- Fixed-size windows such as balenaEtcher no longer flick between sizes or make the focus ring jitter, and windows with a minimum height such as Bambu Studio are no longer fought over their size.
+- Pointer follows focus now lands inside the window when you focus a column that was off screen.
+- Apps hidden with ⌘H come back when their window returns to the visible layout. Before, the window could stay invisible until you focused it.
+- A window that an app rebuilds, such as an Electron reload, now returns to its tile instead of staying invisible.
+- A quick click on a title bar no longer switches workspaces or hides the windows you were looking at.
+- Dropping a window in the gap between stacked windows now inserts it between them.
+- Switching workspaces with a keybind while dragging now refreshes the drop zones, so the drop lands on the workspace you can see.
+- Closing the Overview in the middle of a drag no longer leaves it blank the next time you open it.
+- Fixed a crash when dragging a window across displays.
+
+Also includes internal improvements.
+
+]]></description>
+            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.06/FazerWM-2026.11.06.dmg" length="6269755" type="application/octet-stream" sparkle:edSignature="fZDv5b1LtsG5xXFJX/MZNUyx3rF1PqqEtLOxexhmWmCgcn/UR+w6DFKr4kRXNOGUTA+mzjJdF3E7unuigDdtDw=="/>
+        </item>
+        <item>
             <title>2026.10.29-beta</title>
             <pubDate>Thu, 29 Oct 2026 07:57:59 +0000</pubDate>
             <link>https://fazerwm.app</link>
@@ -54,30 +90,6 @@ Also includes internal improvements.
 
 ]]></description>
             <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.10.26/FazerWM-2026.10.26.dmg" length="5896807" type="application/octet-stream" sparkle:edSignature="b78fAPEM23UjKb0dcMnUvSqTeIAhCsiEQi5Z6YyJL2YovFY/gppdCuDzRp82c1Eygvxy/b7+XO9e/3XnRakpCA=="/>
-        </item>
-        <item>
-            <title>2026.10.26-beta</title>
-            <pubDate>Mon, 26 Oct 2026 07:11:04 +0000</pubDate>
-            <link>https://fazerwm.app</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>2026.10.26.22</sparkle:version>
-            <sparkle:shortVersionString>2026.10.26-beta</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## What's new
-
-- Pausing a window drag at a screen edge now moves between workspaces: left and right edges scroll the workspace a column at a time, top and bottom switch to the workspace above or below, and the bottom edge offers a new workspace when the last one is occupied. Parked-window thumbnails drag the same way, and with coupled workspaces every display switches together. A quick pass through an edge does nothing, so dragging between displays is unchanged. (Pro)
-- Pressing the overview key mid-drag continues the drag inside the overview, so a window can be dropped on any workspace, on any display. (Pro)
-- Dragging a thumbnail past the edge of an overview row now scrolls that row while the pointer rests on the band. The row keeps its scrolled position after the drop and springs back otherwise.
-- Drop zones have a new pill style with an icon and a label naming the action ("New column", "Stack above", "Add as tab"), and the edge bands have bolder indicators that stand out against window borders.
-- The Pro pane in Settings now lists the drag features included with Pro.
-
-## Fixes
-
-- Releasing a drag away from every drop zone after an edge switch now moves the window onto the workspace in view, instead of leaving it behind on the workspace it came from.
-
-]]></description>
-            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.10.26-beta/FazerWM-2026.10.26-beta.dmg" length="5896505" type="application/octet-stream" sparkle:edSignature="FtyyZBqgafAhN+pyRohS0pSD0LBbKSpqLL52MXsjCNwSv5zhptMaDxKjziRbYIxIm6c2vcGbbOX10cMN+VxXCw=="/>
         </item>
     </channel>
 </rss>
