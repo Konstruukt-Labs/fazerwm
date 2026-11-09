@@ -40,8 +40,9 @@ update ordering stays monotonic.
 
 ## Changelog
 
-[`CHANGELOG.md`](./CHANGELOG.md) holds the notes of **every** release,
-newest first. Each release's notes are archived there by CI at publish
+[`CHANGELOG.md`](./CHANGELOG.md) holds the notes of every **stable** release,
+newest first. Beta notes live on the beta's release page and are rolled
+into the next stable's entry. Each stable's notes are archived there by CI at publish
 time, so they survive even when a release is later removed from the
 [releases page](https://github.com/Konstruukt-Labs/fazerwm/releases) —
 the releases page shows what's currently downloadable, the changelog keeps
