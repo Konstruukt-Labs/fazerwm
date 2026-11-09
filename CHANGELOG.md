@@ -3,6 +3,27 @@
 ## What's new
 
 - FazerWM now has its own per-window fullscreen. Press ctrl+cmd+f or click the green button and the window goes fullscreen under FazerWM's layout, with a badge on the tab indicator, Overview, and Recent Windows.
+- Slow macOS animations suck. MacOS bypassed, now they're instant!
+  - Native fullscreen is taken over: the system fullscreen gesture, the Enter/Exit Full Screen menu item, and windows already in native fullscreen convert to FazerWM fullscreen instead.
+  - Native minimized is taken over: the yellow button or cmd+M, and a floating window can be zoomed into the tiling. Minimized and fullscreen windows are restored to their state on relaunch.
+
+## Fixes
+
+- Fixed the app going unresponsive for 10 to 20 seconds, leaving hotkeys and the menu bar dead, while it scanned other applications' windows.
+- Launch is much faster, and clicking windows no longer stalls for seconds.
+- After a reboot, session restore now matches relaunched windows whose titles changed, so a second Mail window lands in its saved spot instead of where macOS reopened it.
+- Recent Windows cards are sized from the window again instead of the display, which happened when another window of the same app was fullscreen.
+- Windows of the frontmost app now park correctly; a fullscreen seat beside a focused compose window used to sit unparked underneath it.
+
+Also includes internal improvements.
+
+---
+
+## FazerWM 2026.11.09-beta — 2026-11-09
+
+## What's new
+
+- FazerWM now has its own per-window fullscreen. Press ctrl+cmd+f or click the green button and the window goes fullscreen under FazerWM's layout, with a badge on the tab indicator, Overview, and Recent Windows.
 - Slow macOS animations suck! Now they're instant
   - Native fullscreen is taken over: the system fullscreen gesture, the Enter/Exit Full Screen menu item, and windows already in native fullscreen convert to FazerWM fullscreen instead.
   - Native minimized is taken over: the yellow button or cmd+M, and a floating window can be zoomed into the tiling. Minimized and fullscreen windows are restored to their state on relaunch.
