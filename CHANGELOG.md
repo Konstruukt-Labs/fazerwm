@@ -1,3 +1,20 @@
+## FazerWM 2026.11.10-beta — 2026-11-10
+
+## Fixes
+
+- Native tab groups (Safari, Ghostty, Mail) are now managed as one window throughout: separate windows that happen to overlap are no longer mistaken for tabs of each other, and Recent Windows lists each group once, as its current tab.
+- Recent Windows and Overview thumbnails now refresh while they are open; previously they could show captures up to 30 seconds old.
+- Closed windows are detected promptly, so closing a window in an app like Mail no longer leaves its frame and focus ring lingering on screen for up to 30 seconds.
+- Selecting a window in Recent Windows no longer scrolls to the wrong column when two windows of the same app share a title.
+- Thumbnails, Overview and keyboard focus now follow the tab of a native group that is actually showing, instead of a hidden tab.
+- Clicking a tab in an app's own tab bar no longer switches you back to the tab you just left.
+- Leaving a workspace parks the visible tab of a native group; previously a hidden tab could be parked while the window you were viewing stayed mid-screen behind the parked thumbnail.
+- While a sheet is open (TextEdit's save dialog, Mail's Attach File), clicking the document behind it now scrolls to it.
+- File dialogs are no longer tiled and resized into odd shapes.
+- DaVinci Resolve's Project Manager and similar elevated dialogs now float instead of being tiled.
+
+---
+
 ## FazerWM 2026.11.09-beta — 2026-11-09
 
 ## What's new
