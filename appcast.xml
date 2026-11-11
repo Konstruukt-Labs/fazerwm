@@ -3,6 +3,44 @@
     <channel>
         <title>FazerWM</title>
         <item>
+            <title>2026.11.11</title>
+            <pubDate>Wed, 11 Nov 2026 00:40:41 +0000</pubDate>
+            <link>https://fazerwm.app</link>
+            <sparkle:version>2026.11.11.31</sparkle:version>
+            <sparkle:shortVersionString>2026.11.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## What's new
+- Slow macOS animations suck. MacOS bypassed, now they're instant!
+  - You will need to set the keybinds in settings if upgrading
+  - Native fullscreen is taken over: the green button and ctrl+cmd+f instantly un/fullscreen widnows, the Enter/Exit Full Screen menu item and windows already in native fullscreen convert to FazerWM fullscreen instead.
+  - Minimize gets the same treatment: the yellow button and cmd+M tuck a tiled or floating window away instantly, a floating window can be zoomed into the tiling, and minimized and fullscreen windows are restored to their state on relaunch.
+
+## Fixes
+
+- Fixed the app going unresponsive for 10 to 20 seconds, leaving hotkeys and the menu bar dead, while it scanned other applications' windows.
+- Launch is much faster, and clicking windows no longer stalls for seconds.
+- Native tab groups (Safari, Ghostty, Mail) are now managed as one window throughout: separate windows that happen to overlap are no longer mistaken for tabs of each other, and Recent Windows lists each group once, as its current tab.
+- Thumbnails, Overview and keyboard focus now follow the tab of a native group that is actually showing, instead of a hidden tab.
+- Clicking a tab in an app's own tab bar no longer switches you back to the tab you just left.
+- Leaving a workspace parks the visible tab of a native group; previously a hidden tab could be parked while the window you were viewing stayed mid-screen behind the parked thumbnail.
+- Recent Windows and Overview thumbnails now refresh while they are open; previously they could show captures up to 30 seconds old.
+- Closed windows are detected promptly, so closing a window in an app like Mail no longer leaves its frame and focus ring lingering on screen for up to 30 seconds.
+- Two windows of the same app that share a title are no longer confused with each other: selecting one in Recent Windows scrolls to the right column, and returning to a workspace focuses the window you last used there.
+- After a reboot, session restore now matches relaunched windows whose titles changed, so a second Mail window lands in its saved spot instead of where macOS reopened it.
+- Windows of the frontmost app now park correctly when you leave their workspace; previously they could stay put if another window of the same app held focus.
+- While a sheet is open (TextEdit's save dialog, Mail's Attach File), clicking the document behind it now scrolls to it.
+- File dialogs are no longer tiled and resized into odd shapes.
+- Elevated dialogs now float instead of being tiled.
+- Moving a floating window that FazerWM has trouble reading now sticks; previously the focus ring stayed behind and the next layout pass snapped the window back.
+- Tooltips are no longer picked up as floating windows with a focus ring.
+
+Also includes internal improvements.
+
+]]></description>
+            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.11/FazerWM-2026.11.11.dmg" length="6370252" type="application/octet-stream" sparkle:edSignature="Dqv2+gzgf6+ncM4ambXo7JcgJh36GpgWwIACM/vGTbJQlOFMmf3VlYFgAqSnUhGsA3zpnf+UXzklWdtDWuZ4Aw=="/>
+        </item>
+        <item>
             <title>2026.11.10-beta</title>
             <pubDate>Tue, 10 Nov 2026 03:56:27 +0000</pubDate>
             <link>https://fazerwm.app</link>
@@ -26,35 +64,6 @@
 
 ]]></description>
             <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.10-beta/FazerWM-2026.11.10-beta.dmg" length="6367736" type="application/octet-stream" sparkle:edSignature="1PGB0B0ZHGMml9IuUJADyU/UgKrWdeRSdicOYMNk+PsC/j7c/6h7ahtKKK7k6ybpF+0bNqKX13DqisdGJtIdCw=="/>
-        </item>
-        <item>
-            <title>2026.11.09-beta</title>
-            <pubDate>Mon, 09 Nov 2026 04:09:59 +0000</pubDate>
-            <link>https://fazerwm.app</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>2026.11.09.29</sparkle:version>
-            <sparkle:shortVersionString>2026.11.09-beta</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## What's new
-
-- FazerWM now has its own per-window fullscreen. Press ctrl+cmd+f or click the green button and the window goes fullscreen under FazerWM's layout, with a badge on the tab indicator, Overview, and Recent Windows.
-- Slow macOS animations suck. MacOS bypassed, now they're instant!
-  - Native fullscreen is taken over: the system fullscreen gesture, the Enter/Exit Full Screen menu item, and windows already in native fullscreen convert to FazerWM fullscreen instead.
-  - Native minimized is taken over: the yellow button or cmd+M, and a floating window can be zoomed into the tiling. Minimized and fullscreen windows are restored to their state on relaunch.
-
-## Fixes
-
-- Fixed the app going unresponsive for 10 to 20 seconds, leaving hotkeys and the menu bar dead, while it scanned other applications' windows.
-- Launch is much faster, and clicking windows no longer stalls for seconds.
-- After a reboot, session restore now matches relaunched windows whose titles changed, so a second Mail window lands in its saved spot instead of where macOS reopened it.
-- Recent Windows cards are sized from the window again instead of the display, which happened when another window of the same app was fullscreen.
-- Windows of the frontmost app now park correctly; a fullscreen seat beside a focused compose window used to sit unparked underneath it.
-
-Also includes internal improvements.
-
-]]></description>
-            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.09-beta/FazerWM-2026.11.09-beta.dmg" length="6367375" type="application/octet-stream" sparkle:edSignature="GfZgYFANcKl6iqz9nbRQcKoI9w/oMnLlXNhZ65X8UFlQC7Vh+UXuVDew3pwWKbHUmWxOkNC4Mx7Ujt3s1MfTAQ=="/>
         </item>
         <item>
             <title>2026.11.06</title>
@@ -91,34 +100,6 @@ Also includes internal improvements.
 
 ]]></description>
             <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.06/FazerWM-2026.11.06.dmg" length="6269755" type="application/octet-stream" sparkle:edSignature="fZDv5b1LtsG5xXFJX/MZNUyx3rF1PqqEtLOxexhmWmCgcn/UR+w6DFKr4kRXNOGUTA+mzjJdF3E7unuigDdtDw=="/>
-        </item>
-        <item>
-            <title>2026.10.29-beta</title>
-            <pubDate>Thu, 29 Oct 2026 07:57:59 +0000</pubDate>
-            <link>https://fazerwm.app</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>2026.10.29.26</sparkle:version>
-            <sparkle:shortVersionString>2026.10.29-beta</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## What's new
-
-- Added an opt-in setting (Pro) that puts the recent windows switcher on ⌘Tab, ⌘⇧Tab, ⌘` and ⌘⇧` in place of the macOS switcher.
-- Overview thumbnails now carry a label showing the app icon and window title, so windows are easier to tell apart at a glance. (Pro) Configure them under Settings > Overview > Window Labels.
-- Recent windows cards show the app icon next to the app name. (Pro) Toggle it under Settings > Recent Windows.
-
-## Fixes
-
-- Fixed a wake bug where a display's windows could end up on another display and stay there after the display returned, leaving conflicting layouts and an empty desktop.
-- Windows keep their display and workspace assignments through brief display reconfigurations, such as waking from sleep or switching inputs.
-- Dragging a file or selected text out of a window no longer brings up the drop-zone overlay when the pointer crosses onto another display.
-- Apps that insist on their own window size, like a browser restoring its previous session, are now sized correctly instead of keeping the wrong height.
-- Reopening the overview no longer shows a stale app label or a stuck expanded label.
-
-Also includes internal improvements.
-
-]]></description>
-            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.10.29-beta/FazerWM-2026.10.29-beta.dmg" length="5962777" type="application/octet-stream" sparkle:edSignature="LAmL51qnUHlt1lIX217P4WJPrW+PiZ/zjICxzBgWs50EflFGrj0IzYprI+Cp17UimU7g5UDsfUCDmcCkG5MoDg=="/>
         </item>
         <item>
             <title>2026.10.26</title>
