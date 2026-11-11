@@ -1,3 +1,34 @@
+## FazerWM 2026.11.11 — 2026-11-11
+
+## What's new
+- Slow macOS animations suck. MacOS bypassed, now they're instant!
+  - You will need to set the keybinds in settings if upgrading
+  - Native fullscreen is taken over: the green button and ctrl+cmd+f instantly un/fullscreen widnows, the Enter/Exit Full Screen menu item and windows already in native fullscreen convert to FazerWM fullscreen instead.
+  - Minimize gets the same treatment: the yellow button and cmd+M tuck a tiled or floating window away instantly, a floating window can be zoomed into the tiling, and minimized and fullscreen windows are restored to their state on relaunch.
+
+## Fixes
+
+- Fixed the app going unresponsive for 10 to 20 seconds, leaving hotkeys and the menu bar dead, while it scanned other applications' windows.
+- Launch is much faster, and clicking windows no longer stalls for seconds.
+- Native tab groups (Safari, Ghostty, Mail) are now managed as one window throughout: separate windows that happen to overlap are no longer mistaken for tabs of each other, and Recent Windows lists each group once, as its current tab.
+- Thumbnails, Overview and keyboard focus now follow the tab of a native group that is actually showing, instead of a hidden tab.
+- Clicking a tab in an app's own tab bar no longer switches you back to the tab you just left.
+- Leaving a workspace parks the visible tab of a native group; previously a hidden tab could be parked while the window you were viewing stayed mid-screen behind the parked thumbnail.
+- Recent Windows and Overview thumbnails now refresh while they are open; previously they could show captures up to 30 seconds old.
+- Closed windows are detected promptly, so closing a window in an app like Mail no longer leaves its frame and focus ring lingering on screen for up to 30 seconds.
+- Two windows of the same app that share a title are no longer confused with each other: selecting one in Recent Windows scrolls to the right column, and returning to a workspace focuses the window you last used there.
+- After a reboot, session restore now matches relaunched windows whose titles changed, so a second Mail window lands in its saved spot instead of where macOS reopened it.
+- Windows of the frontmost app now park correctly when you leave their workspace; previously they could stay put if another window of the same app held focus.
+- While a sheet is open (TextEdit's save dialog, Mail's Attach File), clicking the document behind it now scrolls to it.
+- File dialogs are no longer tiled and resized into odd shapes.
+- Elevated dialogs now float instead of being tiled.
+- Moving a floating window that FazerWM has trouble reading now sticks; previously the focus ring stayed behind and the next layout pass snapped the window back.
+- Tooltips are no longer picked up as floating windows with a focus ring.
+
+Also includes internal improvements.
+
+---
+
 ## FazerWM 2026.11.10-beta — 2026-11-10
 
 ## Fixes
