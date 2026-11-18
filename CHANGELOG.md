@@ -1,3 +1,13 @@
+## FazerWM 2026.11.18 — 2026-11-18
+
+## Fixes
+
+- Fullscreen that an app starts on its own, like a video player expanding to fill the screen, now stays in macOS fullscreen instead of being converted to FazerWM fullscreen.
+- Dragging content inside an app's window, such as clips in DaVinci Resolve's media pool, no longer triggers the tab tear-off drop zones.
+- Tearing off a tab in Chrome now shows the drop zones, which previously could fail to appear.
+
+---
+
 ## FazerWM 2026.11.11 — 2026-11-11
 
 ## What's new
