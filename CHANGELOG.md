@@ -1,3 +1,20 @@
+## FazerWM 2026.11.24 — 2026-11-24
+
+## What's new
+
+- FazerWM is now a one time purchase.
+- Thumbnails now refresh only for windows you can actually see, which cuts background CPU use considerably; the periodic refresh that keeps video and stream thumbnails current runs every 5 seconds instead of every second.
+- When an app takes unusually long to move one of its windows, a notice now appears naming the app and the delay, and suggests relaunching it. It shows at most once a day per window and stays quiet for a short while after monitors change, when some slowness is normal.
+- Window scans now run within a fixed time budget, so a run of unresponsive apps can no longer leave FazerWM pausing for seconds at a time; slow apps are simply skipped for that pass.
+- One-time licenses are now scoped to a generation: a license covers the current FazerWM series, and the next major version may be a separate purchase. The About panel and Pro tab explain the model.
+
+## Fixes
+
+- Parked windows no longer leave a focus ring redrawing at stale positions off-screen during scroll transitions.
+- Also includes internal improvements.
+
+---
+
 ## FazerWM 2026.11.18 — 2026-11-18
 
 ## Fixes
