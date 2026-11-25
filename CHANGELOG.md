@@ -1,3 +1,24 @@
+## FazerWM 2026.11.25-beta.2 — 2026-11-25
+
+## What's new
+
+- Dragging a tab out of a native tab group (Safari, Finder, Terminal) now pulls it out as its own tiled window. With tear-off drop on, the drop zones appear and the tab goes where you release it. It used to snap back into the group.
+- The Overview's new-workspace band (PRO) now appears on every display during a drag, so you can drop a window onto it on any screen.
+- The Overview now has an entry in the menu bar menu.
+- FazerWM finishes starting up a little sooner. It connects to your apps in parallel and runs the first window scan during launch.
+- Layout-only refreshes skip the window scan they never needed, so FazerWM does less work on every layout change.
+
+## Fixes
+
+- Switching workspaces with Cmd+Tab could stall for up to a minute if FazerWM missed a mouse release during a drag. A drag that is already over is now released.
+- Safari tab drags no longer get cancelled partway through.
+- If an app replaces a window mid-drag, the window gets its place in the layout back instead of losing it.
+- A native fullscreen window found at launch is now focused on the Space it's shown on. It used to be left unfocused and parked off the right edge.
+- Closing a window of an app that switches its activation policy (1Password, for one) could crash FazerWM. That's fixed.
+- Includes internal improvements.
+
+---
+
 ## FazerWM 2026.11.25-beta — 2026-11-25
 
 ## What's new
