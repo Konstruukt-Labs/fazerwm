@@ -1,3 +1,23 @@
+## FazerWM 2026.11.25-beta — 2026-11-25
+
+## What's new
+
+- An unresponsive app no longer slows FazerWM down. In testing, the time FazerWM's main thread spent waiting on a frozen app dropped by over 90% (from 64% of its time to 3%), and layout passes that included the frozen window went from about 400 ms to about 12 ms. Hotkeys, layout, and the Overview keep working, and the focus ring follows when you click or switch to the app, as long as its window is on screen.
+- Chromium-based apps, including Chrome and Electron apps like VS Code and Slack, now get accessibility switched on automatically. This fixes most of the flakiness they caused: windows that never appeared in the layout, and resizes and fullscreen changes that silently failed.
+- Display changes are much faster. Unplugging a display moves its windows to the remaining one in about two seconds (it could take up to 31), and after a wake or hot-plug the new layout applies about a second after the last display arrives.
+- Window scans and state updates do much less work, so FazerWM uses less CPU as windows open, close, and move.
+- On a new macOS version, the first launch now checks the private macOS APIs FazerWM depends on and logs any that broke.
+
+## Fixes
+
+- Reconnecting a display no longer forces a window back into fullscreen because an old saved layout captured it there.
+- Relaunching FazerWM with a window in native fullscreen no longer stretches that window across the whole screen once you exit fullscreen.
+- Small windows in the recent-windows switcher now render at their actual size, instead of a shrunken thumbnail stuck in the corner of an oversized box or stretched to fill the card.
+- Config files that fail to parse now write the error to the debug log. They used to fall back to defaults silently, with nothing in the log to say why.
+- Includes internal improvements.
+
+---
+
 ## FazerWM 2026.11.24 — 2026-11-24
 
 ## What's new
