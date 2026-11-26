@@ -3,6 +3,44 @@
     <channel>
         <title>FazerWM</title>
         <item>
+            <title>2026.11.26</title>
+            <pubDate>Thu, 26 Nov 2026 20:41:53 +0000</pubDate>
+            <link>https://fazerwm.app</link>
+            <sparkle:version>2026.11.26.40</sparkle:version>
+            <sparkle:shortVersionString>2026.11.26</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## What's new
+
+- FazerWM now has a built-in Hyper key: hold Caps Lock to use it as Hyper, tap it to toggle Caps Lock. A new Settings toggle controls the Caps Lock Hyper mapping and is on by default. Karabiner-Elements is no longer needed for this.
+- First-run setup no longer asks you to configure Karabiner, and if FazerWM's old rule is still in karabiner.json, you're offered a one-time option to disable or remove it.
+- An unresponsive app no longer slows FazerWM down. In testing, the time FazerWM's main thread spent waiting on a frozen app dropped by over 90% (from 64% of its time to 3%), and layout passes that included the frozen window went from about 400 ms to about 12 ms. Hotkeys, layout, and the Overview keep working, and the focus ring follows when you click or switch to the app, as long as its window is on screen.
+- Chromium-based apps, including Chrome and Electron apps like VS Code and Slack, now get accessibility switched on automatically. This fixes most of the flakiness they caused: windows that never appeared in the layout, and resizes and fullscreen changes that silently failed.
+- Display changes are much faster. Unplugging a display moves its windows to the remaining one in about two seconds (it could take up to 31), and after a wake or hot-plug the new layout applies about a second after the last display arrives.
+- Dragging a tab out of a native tab group (Safari, Finder, Terminal) now pulls it out as its own tiled window. With tear-off drop on, the drop zones appear and the tab goes where you release it. It used to snap back into the group.
+- The Overview's new-workspace band (PRO) now appears on every display during a drag, so you can drop a window onto it on any screen.
+- The menu bar menu now has an Overview entry.
+- FazerWM finishes starting up a little sooner. It connects to your apps in parallel and runs the first window scan during launch.
+- Window scans and state updates do much less work, so FazerWM uses less CPU as windows open, close, and move. Layout-only refreshes skip the window scan they never needed.
+- On a new macOS version, the first launch now checks the private macOS APIs FazerWM depends on and logs any that broke.
+
+## Fixes
+
+- Switching workspaces with Cmd+Tab could stall for up to a minute if FazerWM missed a mouse release during a drag. A drag that is already over is now released.
+- Safari tab drags no longer get cancelled partway through.
+- If an app replaces a window mid-drag, the window gets its place in the layout back instead of losing it.
+- Reconnecting a display no longer forces a window back into fullscreen because an old saved layout captured it there.
+- Relaunching FazerWM with a window in native fullscreen no longer stretches that window across the whole screen once you exit fullscreen.
+- A native fullscreen window found at launch is now focused on the Space it's shown on. It used to be left unfocused and parked off the right edge.
+- Closing a window of an app that switches its activation policy (1Password, for one) could crash FazerWM. That's fixed.
+- Small windows in the recent-windows switcher now render at their actual size, instead of a shrunken thumbnail stuck in the corner of an oversized box or stretched to fill the card.
+- Config files that fail to parse now write the error to the debug log. They used to fall back to defaults silently, with nothing in the log to say why.
+- Also includes internal improvements.
+
+]]></description>
+            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.26/FazerWM-2026.11.26.dmg" length="6521568" type="application/octet-stream" sparkle:edSignature="Q+4afuDpN4w1P9tWrZmXHvw2jFRotzOGo5Vp4/SRhHmCOjqSbikMefE4vXSePCZdd8tTLYuOtOmJ4Aj/ZlyfDA=="/>
+        </item>
+        <item>
             <title>2026.11.26-beta</title>
             <pubDate>Thu, 26 Nov 2026 00:10:57 +0000</pubDate>
             <link>https://fazerwm.app</link>
@@ -19,63 +57,6 @@
 
 ]]></description>
             <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.26-beta/FazerWM-2026.11.26-beta.dmg" length="6521510" type="application/octet-stream" sparkle:edSignature="58keIO+jXhcIwuSltHLlNynsFE9UraGzey2ch6SEqxzDZCevQotT2oPuxtwdoqeQIKxalRNsv5oBBwBAeK+DDw=="/>
-        </item>
-        <item>
-            <title>2026.11.25-beta.2</title>
-            <pubDate>Wed, 25 Nov 2026 23:06:18 +0000</pubDate>
-            <link>https://fazerwm.app</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>2026.11.25.38</sparkle:version>
-            <sparkle:shortVersionString>2026.11.25-beta.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## What's new
-
-- Dragging a tab out of a native tab group (Safari, Finder, Terminal) now pulls it out as its own tiled window. With tear-off drop on, the drop zones appear and the tab goes where you release it. It used to snap back into the group.
-- The Overview's new-workspace band (PRO) now appears on every display during a drag, so you can drop a window onto it on any screen.
-- The Overview now has an entry in the menu bar menu.
-- FazerWM finishes starting up a little sooner. It connects to your apps in parallel and runs the first window scan during launch.
-- Layout-only refreshes skip the window scan they never needed, so FazerWM does less work on every layout change.
-
-## Fixes
-
-- Switching workspaces with Cmd+Tab could stall for up to a minute if FazerWM missed a mouse release during a drag. A drag that is already over is now released.
-- Safari tab drags no longer get cancelled partway through.
-- If an app replaces a window mid-drag, the window gets its place in the layout back instead of losing it.
-- A native fullscreen window found at launch is now focused on the Space it's shown on. It used to be left unfocused and parked off the right edge.
-- Closing a window of an app that switches its activation policy (1Password, for one) could crash FazerWM. That's fixed.
-- Includes internal improvements.
-
-]]></description>
-            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.25-beta.2/FazerWM-2026.11.25-beta.2.dmg" length="6525090" type="application/octet-stream" sparkle:edSignature="6alNnJkgiOj71VeGikGvsY9YBy8X2i6x8j+X5woOZTzwQIE2gulV029rAVmHC4q4dJpvbuM4D5/lVN8y6lytCA=="/>
-        </item>
-        <item>
-            <title>2026.11.25-beta</title>
-            <pubDate>Wed, 25 Nov 2026 00:41:16 +0000</pubDate>
-            <link>https://fazerwm.app</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>2026.11.25.35</sparkle:version>
-            <sparkle:shortVersionString>2026.11.25-beta</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## What's new
-
-- An unresponsive app no longer slows FazerWM down. In testing, the time FazerWM's main thread spent waiting on a frozen app dropped by over 90% (from 64% of its time to 3%), and layout passes that included the frozen window went from about 400 ms to about 12 ms. Hotkeys, layout, and the Overview keep working, and the focus ring follows when you click or switch to the app, as long as its window is on screen.
-- Chromium-based apps, including Chrome and Electron apps like VS Code and Slack, now get accessibility switched on automatically. This fixes most of the flakiness they caused: windows that never appeared in the layout, and resizes and fullscreen changes that silently failed.
-- Display changes are much faster. Unplugging a display moves its windows to the remaining one in about two seconds (it could take up to 31), and after a wake or hot-plug the new layout applies about a second after the last display arrives.
-- Window scans and state updates do much less work, so FazerWM uses less CPU as windows open, close, and move.
-- On a new macOS version, the first launch now checks the private macOS APIs FazerWM depends on and logs any that broke.
-
-## Fixes
-
-- Reconnecting a display no longer forces a window back into fullscreen because an old saved layout captured it there.
-- Relaunching FazerWM with a window in native fullscreen no longer stretches that window across the whole screen once you exit fullscreen.
-- Small windows in the recent-windows switcher now render at their actual size, instead of a shrunken thumbnail stuck in the corner of an oversized box or stretched to fill the card.
-- Config files that fail to parse now write the error to the debug log. They used to fall back to defaults silently, with nothing in the log to say why.
-- Includes internal improvements.
-
-]]></description>
-            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.25-beta/FazerWM-2026.11.25-beta.dmg" length="6495304" type="application/octet-stream" sparkle:edSignature="OOSLLoKE4DFW87KUgNPJuPoctOc0IlnDqCI0RYA/gz6gac5YkRSdKylrITa4FCivP6WzOyNe9Dhxsuy3AfPuAQ=="/>
         </item>
         <item>
             <title>2026.11.24</title>
@@ -117,45 +98,6 @@
 
 ]]></description>
             <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.18/FazerWM-2026.11.18.dmg" length="6373933" type="application/octet-stream" sparkle:edSignature="l1YN2xVXZ4yiXQgDGgM6362GmPYU/VZii1tl6IhNvNw3iFyMirOoIaBBJYvEIghd5QxatCriyYNbhOX7PSAoBQ=="/>
-        </item>
-        <item>
-            <title>2026.11.11</title>
-            <pubDate>Wed, 11 Nov 2026 00:40:41 +0000</pubDate>
-            <link>https://fazerwm.app</link>
-            <sparkle:version>2026.11.11.31</sparkle:version>
-            <sparkle:shortVersionString>2026.11.11</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## What's new
-- Slow macOS animations suck. MacOS bypassed, now they're instant!
-  - You will need to set the keybinds in settings if upgrading
-  - Native fullscreen is taken over: the green button and ctrl+cmd+f instantly un/fullscreen widnows, the Enter/Exit Full Screen menu item and windows already in native fullscreen convert to FazerWM fullscreen instead.
-  - Minimize gets the same treatment: the yellow button and cmd+M tuck a tiled or floating window away instantly, a floating window can be zoomed into the tiling
-- Minimized and fullscreen windows are restored to their state on relaunch.
-
-## Fixes
-
-- Fixed the app going unresponsive for 10 to 20 seconds, leaving hotkeys and the menu bar dead, while it scanned other applications' windows.
-- Launch is much faster, and clicking windows no longer stalls for seconds.
-- Native tab groups (Safari, Ghostty, etc) are now managed as one window throughout: separate windows that happen to overlap are no longer mistaken for tabs of each other, and Recent Windows lists each group once, as its current tab.
-- Thumbnails, Overview and keyboard focus now follow the tab of a native group that is actually showing, instead of a hidden tab.
-- Clicking a tab in an app's own tab bar no longer switches you back to the tab you just left.
-- Leaving a workspace parks the visible tab of a native group; previously a hidden tab could be parked while the window you were viewing stayed mid-screen behind the parked thumbnail.
-- Recent Windows and Overview thumbnails now refresh while they are open; previously they could show captures up to 30 seconds old.
-- Closed windows are detected promptly, so closing a window in an app like Mail no longer leaves its frame and focus ring lingering on screen for up to 30 seconds.
-- Two windows of the same app that share a title are no longer confused with each other: selecting one in Recent Windows scrolls to the right column, and returning to a workspace focuses the window you last used there.
-- After a reboot, session restore now matches relaunched windows whose titles changed, so a second Mail window lands in its saved spot instead of where macOS reopened it.
-- Windows of the frontmost app now park correctly when you leave their workspace; previously they could stay put if another window of the same app held focus.
-- While a sheet is open (TextEdit's save dialog, Mail's Attach File), clicking the document behind it now scrolls to it.
-- File dialogs are no longer tiled and resized into odd shapes.
-- Elevated dialogs now float instead of being tiled.
-- Moving a floating window that FazerWM has trouble reading now sticks; previously the focus ring stayed behind and the next layout pass snapped the window back.
-- Tooltips are no longer picked up as floating windows with a focus ring.
-
-Also includes internal improvements.
-
-]]></description>
-            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.11/FazerWM-2026.11.11.dmg" length="6370252" type="application/octet-stream" sparkle:edSignature="Dqv2+gzgf6+ncM4ambXo7JcgJh36GpgWwIACM/vGTbJQlOFMmf3VlYFgAqSnUhGsA3zpnf+UXzklWdtDWuZ4Aw=="/>
         </item>
     </channel>
 </rss>
