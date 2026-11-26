@@ -1,3 +1,34 @@
+## FazerWM 2026.11.26 — 2026-11-26
+
+## What's new
+
+- FazerWM now has a built-in Hyper key: hold Caps Lock to use it as Hyper, tap it to toggle Caps Lock. A new Settings toggle controls the Caps Lock Hyper mapping and is on by default. Karabiner-Elements is no longer needed for this.
+- First-run setup no longer asks you to configure Karabiner, and if FazerWM's old rule is still in karabiner.json, you're offered a one-time option to disable or remove it.
+- An unresponsive app no longer slows FazerWM down. In testing, the time FazerWM's main thread spent waiting on a frozen app dropped by over 90% (from 64% of its time to 3%), and layout passes that included the frozen window went from about 400 ms to about 12 ms. Hotkeys, layout, and the Overview keep working, and the focus ring follows when you click or switch to the app, as long as its window is on screen.
+- Chromium-based apps, including Chrome and Electron apps like VS Code and Slack, now get accessibility switched on automatically. This fixes most of the flakiness they caused: windows that never appeared in the layout, and resizes and fullscreen changes that silently failed.
+- Display changes are much faster. Unplugging a display moves its windows to the remaining one in about two seconds (it could take up to 31), and after a wake or hot-plug the new layout applies about a second after the last display arrives.
+- Dragging a tab out of a native tab group (Safari, Finder, Terminal) now pulls it out as its own tiled window. With tear-off drop on, the drop zones appear and the tab goes where you release it. It used to snap back into the group.
+- The Overview's new-workspace band (PRO) now appears on every display during a drag, so you can drop a window onto it on any screen.
+- The menu bar menu now has an Overview entry.
+- FazerWM finishes starting up a little sooner. It connects to your apps in parallel and runs the first window scan during launch.
+- Window scans and state updates do much less work, so FazerWM uses less CPU as windows open, close, and move. Layout-only refreshes skip the window scan they never needed.
+- On a new macOS version, the first launch now checks the private macOS APIs FazerWM depends on and logs any that broke.
+
+## Fixes
+
+- Switching workspaces with Cmd+Tab could stall for up to a minute if FazerWM missed a mouse release during a drag. A drag that is already over is now released.
+- Safari tab drags no longer get cancelled partway through.
+- If an app replaces a window mid-drag, the window gets its place in the layout back instead of losing it.
+- Reconnecting a display no longer forces a window back into fullscreen because an old saved layout captured it there.
+- Relaunching FazerWM with a window in native fullscreen no longer stretches that window across the whole screen once you exit fullscreen.
+- A native fullscreen window found at launch is now focused on the Space it's shown on. It used to be left unfocused and parked off the right edge.
+- Closing a window of an app that switches its activation policy (1Password, for one) could crash FazerWM. That's fixed.
+- Small windows in the recent-windows switcher now render at their actual size, instead of a shrunken thumbnail stuck in the corner of an oversized box or stretched to fill the card.
+- Config files that fail to parse now write the error to the debug log. They used to fall back to defaults silently, with nothing in the log to say why.
+- Also includes internal improvements.
+
+---
+
 ## FazerWM 2026.11.26-beta — 2026-11-26
 
 ## What's new
