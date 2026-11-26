@@ -3,6 +3,24 @@
     <channel>
         <title>FazerWM</title>
         <item>
+            <title>2026.11.26-beta</title>
+            <pubDate>Thu, 26 Nov 2026 00:10:57 +0000</pubDate>
+            <link>https://fazerwm.app</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>2026.11.26.39</sparkle:version>
+            <sparkle:shortVersionString>2026.11.26-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## What's new
+
+- FazerWM now has a built-in Hyper key: hold Caps Lock to use it as Hyper, tap it to toggle Caps Lock. Karabiner-Elements is no longer needed for this.
+- A new Settings toggle controls the Caps Lock Hyper mapping and is on by default.
+- First-run setup no longer asks you to configure Karabiner, and if FazerWM's old rule is still in karabiner.json, you're offered a one-time option to disable or remove it.
+
+]]></description>
+            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.26-beta/FazerWM-2026.11.26-beta.dmg" length="6521510" type="application/octet-stream" sparkle:edSignature="58keIO+jXhcIwuSltHLlNynsFE9UraGzey2ch6SEqxzDZCevQotT2oPuxtwdoqeQIKxalRNsv5oBBwBAeK+DDw=="/>
+        </item>
+        <item>
             <title>2026.11.25-beta.2</title>
             <pubDate>Wed, 25 Nov 2026 23:06:18 +0000</pubDate>
             <link>https://fazerwm.app</link>
@@ -138,31 +156,6 @@ Also includes internal improvements.
 
 ]]></description>
             <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.11/FazerWM-2026.11.11.dmg" length="6370252" type="application/octet-stream" sparkle:edSignature="Dqv2+gzgf6+ncM4ambXo7JcgJh36GpgWwIACM/vGTbJQlOFMmf3VlYFgAqSnUhGsA3zpnf+UXzklWdtDWuZ4Aw=="/>
-        </item>
-        <item>
-            <title>2026.11.10-beta</title>
-            <pubDate>Tue, 10 Nov 2026 03:56:27 +0000</pubDate>
-            <link>https://fazerwm.app</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>2026.11.10.30</sparkle:version>
-            <sparkle:shortVersionString>2026.11.10-beta</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Fixes
-
-- Native tab groups (Safari, Ghostty, Mail) are now managed as one window throughout: separate windows that happen to overlap are no longer mistaken for tabs of each other, and Recent Windows lists each group once, as its current tab.
-- Recent Windows and Overview thumbnails now refresh while they are open; previously they could show captures up to 30 seconds old.
-- Closed windows are detected promptly, so closing a window in an app like Mail no longer leaves its frame and focus ring lingering on screen for up to 30 seconds.
-- Selecting a window in Recent Windows no longer scrolls to the wrong column when two windows of the same app share a title.
-- Thumbnails, Overview and keyboard focus now follow the tab of a native group that is actually showing, instead of a hidden tab.
-- Clicking a tab in an app's own tab bar no longer switches you back to the tab you just left.
-- Leaving a workspace parks the visible tab of a native group; previously a hidden tab could be parked while the window you were viewing stayed mid-screen behind the parked thumbnail.
-- While a sheet is open (TextEdit's save dialog, Mail's Attach File), clicking the document behind it now scrolls to it.
-- File dialogs are no longer tiled and resized into odd shapes.
-- DaVinci Resolve's Project Manager and similar elevated dialogs now float instead of being tiled.
-
-]]></description>
-            <enclosure url="https://github.com/Konstruukt-Labs/fazerwm/releases/download/v2026.11.10-beta/FazerWM-2026.11.10-beta.dmg" length="6367736" type="application/octet-stream" sparkle:edSignature="1PGB0B0ZHGMml9IuUJADyU/UgKrWdeRSdicOYMNk+PsC/j7c/6h7ahtKKK7k6ybpF+0bNqKX13DqisdGJtIdCw=="/>
         </item>
     </channel>
 </rss>
