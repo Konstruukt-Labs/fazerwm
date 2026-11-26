@@ -1,3 +1,13 @@
+## FazerWM 2026.11.26-beta — 2026-11-26
+
+## What's new
+
+- FazerWM now has a built-in Hyper key: hold Caps Lock to use it as Hyper, tap it to toggle Caps Lock. Karabiner-Elements is no longer needed for this.
+- A new Settings toggle controls the Caps Lock Hyper mapping and is on by default.
+- First-run setup no longer asks you to configure Karabiner, and if FazerWM's old rule is still in karabiner.json, you're offered a one-time option to disable or remove it.
+
+---
+
 ## FazerWM 2026.11.25-beta.2 — 2026-11-25
 
 ## What's new
